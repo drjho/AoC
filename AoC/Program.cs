@@ -12,9 +12,10 @@ namespace AoC
 
         static void Main(string[] args)
         {
-            new D1();
+            //new D1();
+            new D2();
         }
 
-        
+
     }
 }

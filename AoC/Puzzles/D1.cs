@@ -36,7 +36,7 @@ namespace AoC.Puzzles
             Console.WriteLine(Distance(x, y));
         }
 
-        static string Move(int steps)
+        string Move(int steps)
         {
             while (steps > 0)
             {
@@ -68,12 +68,12 @@ namespace AoC.Puzzles
             return "";
         }
 
-        static string CoordString(int x, int y)
+        string CoordString(int x, int y)
         {
             return $"{x},{y}";
         }
 
-        static int Distance(int x, int y)
+        int Distance(int x, int y)
         {
             Console.WriteLine(x + "," + y);
             return Math.Abs(x) + Math.Abs(y);
