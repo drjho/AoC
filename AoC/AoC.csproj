@@ -47,9 +47,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puzzles\D1.cs" />
     <Compile Include="Puzzles\D2.cs" />
+    <Compile Include="Puzzles\D3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\D3.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
