@@ -13,11 +13,10 @@ namespace AoC.Puzzles
 
         public D4()
         {
-            One();
-
+            OneAndTwo();
         }
 
-        void One()
+        void OneAndTwo()
         {
             var inputs = File.ReadAllLines(path);
             int sum = 0;
@@ -59,10 +58,25 @@ namespace AoC.Puzzles
                 }
                 //Console.WriteLine(res.ToString());
                 if (res == checksum)
-                    sum += int.Parse(id);
+                {
+                    var sid = int.Parse(id);
+                    sum += sid;
+                    var shift = sid % 26;
+
+                    var n = "";
+                    foreach (var c in name)
+                    {
+                        if (c == '-')
+                            n += ' ';
+                        else
+                            n += (char)('a' + (c - 'a' + shift) % 26);
+                    }
+                    if (n.Contains("north"))
+                        Console.WriteLine(n + ": " + id);
+                }
 
                 //Console.WriteLine(string.Join(",", counts));
-                
+
                 //break;
             }
             Console.WriteLine(sum);
