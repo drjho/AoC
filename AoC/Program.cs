@@ -14,7 +14,8 @@ namespace AoC
         {
             //new D1();
             //new D2();
-            new D3();
+            //new D3();
+            new D4();
         }
 
 

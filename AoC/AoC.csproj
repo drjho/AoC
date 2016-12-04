@@ -48,11 +48,13 @@
     <Compile Include="Puzzles\D1.cs" />
     <Compile Include="Puzzles\D2.cs" />
     <Compile Include="Puzzles\D3.cs" />
+    <Compile Include="Puzzles\D4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\D4.txt" />
     <Content Include="Data\D3.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

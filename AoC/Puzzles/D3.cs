@@ -55,7 +55,7 @@ namespace AoC.Puzzles
                 list.Add(n1);
                 list.Add(n2);
                 list.Add(n3);
-                //break;
+                break;
             }
             foreach (var nums in list)
             {
